@@ -1,6 +1,7 @@
 fastapi
 uvicorn
 pypdf
+langgraph
 langchain-community
 langchain-classic
 langchain-huggingface
