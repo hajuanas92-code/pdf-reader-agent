@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: 
+      context: .
+      dockerfile: project/backend/Dockerfile
+    container_name: fastapi_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./project/db_data:/app/data
+      - ./project/chat_data:/app/chat_history
+      - ./project/chroma_data:/app/chroma_db
+      - ./project/docstore_data:/app/docstore_db"
+
+  frontend:
+    build: 
+      context: .
+      dockerfile: project/frontend/Dockerfile
+    container_name: streamlit_frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONPATH=/app
+    depends_on: 
+      - backend

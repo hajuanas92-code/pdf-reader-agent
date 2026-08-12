@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pypdf
+langchain-community
+langchain-classic
+langchain-huggingface
+langchain-text-splitters
+langchain-chroma
+langchain-google-genai
+langchain-groq
+langchain-mcp-adapters
+mcp
+fastmcp
+sentence-transformers
+rank_bm25
+flashrank

@@ -1,0 +1,23 @@
+# virtual environments
+.venv/
+venv/
+env/
+
+# cache files
+**/pycache/
+*.pyc
+*.pyo
+*.pyd
+
+# database files
+project/db_data
+project/chat_data
+project/chroma_data
+project/docstore_data
+
+# git files
+.git
+.gitignore
+
+# system files
+.DS_STORE

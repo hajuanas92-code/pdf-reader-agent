@@ -1,0 +1,16 @@
+# python byte code
+**/__pycache__/
+*.pyc
+
+# environment files
+.env
+
+# virtual environments
+**/venv/
+.venv/
+
+# databases inside project folder
+*.db
+project/*.db
+project/chroma_db
+project/docstore_db
