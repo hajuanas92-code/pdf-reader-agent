@@ -2,13 +2,13 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from pypdf import PdfReader
 from langchain_core.documents import Document
 from langchain_core.messages import HumanMessage
-from project.backend.langgraph_agent import graph_state
+from langgraph_agent import graph_state
 from dotenv import load_dotenv
 from pydantic import BaseModel
 from io import BytesIO
-from project.backend.rag import add_pdf
-from project.backend.database import create_table, insert_pdf, insert_chat
-from project.backend.mcp_client import get_mcp_tools
+from rag import add_pdf
+from database import create_table, insert_pdf, insert_chat
+from mcp_client import get_mcp_tools
 from contextlib import asynccontextmanager
 
 load_dotenv()

@@ -1,6 +1,6 @@
 import streamlit as st
 import requests, os
-from project.backend.database import show_files, get_chat_history
+from database import show_files, get_chat_history
 
 #    ---- setting url for fastapi endpoints ----
 if "CODESPACE_NAME" in os.environ:
