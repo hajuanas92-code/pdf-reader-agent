@@ -8,6 +8,9 @@ if "CODESPACE_NAME" in os.environ:
 
    BASE_URL = f"https://{codespace_name}-8000.app.github.dev"
 
+elif "BACKEND_URL" in os.environ:
+   BASE_URL = os.environ.get('BACKEND_URL')
+   
 else:
    BASE_URL = "http://backend:8000"
 
